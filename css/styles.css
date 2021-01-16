@@ -9,7 +9,7 @@ body{
     background-image: url("../images/bg-top.svg");
     background-repeat: no-repeat;
     background-position: right;
-    background-size: 18%;
+    background-size: contain;
     
 
 }
@@ -22,7 +22,8 @@ body::after{
     background-image: url("../images/bg-bottom.svg");
     background-repeat: no-repeat;
     background-position: bottom left;
-    background-size: 28%;
+    background-size: 20%;
+    z-index: -1111;
 }
 
 /* grid layout */
@@ -62,12 +63,90 @@ body::after{
 
   .top-heading{
       text-align: center;
-      padding: 80px;
+      padding: 40px;
   }
   h1{
       padding: 20px;
       color: hsl(233, 13%, 49%) ;
   }
-  section{
+  .price-components{
       text-align: center;
+      
+      
   }
+
+  .col-4{
+      border-radius: 10px;
+      padding: 40px;
+  }
+
+  h5{
+      font-size: 20px;
+  }
+
+  .monthly,.annually{
+      font-size: 40px;
+      font-weight: 700;
+  }
+  ul{
+      list-style: none;
+  }
+
+  ul li{
+      /* border-top:1px solid; */
+      border-bottom: 1px solid;
+      padding: 20px;
+      
+  }
+
+  .head-basic,.head-master{
+    color: hsl(233, 13%, 49%);
+    
+
+  }
+
+  .basic{
+    z-index: 9999;
+  }
+  .proffessional{
+      color: hsl(240, 78%, 98%);
+  }
+
+
+  .basic,.master{
+      background-color:hsl(236, 72%, 79%);
+      height:450px;
+      
+  }
+
+  .proffessional{
+      position: relative;
+      bottom: 40px;
+      height: 530px;
+      background-image: linear-gradient(to right,hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+      
+      
+  }
+
+  .align{
+      position: relative;
+      top: 40px;
+  }
+
+  button{
+     padding: 15px 100px; 
+     margin-top: 30px;
+     border: 1px;
+     border-radius: 10px;
+     font-size: 15px;
+     font-weight: 500;
+     
+  }
+
+  button:hover{
+      cursor: pointer;
+  }
+  button:active{
+      outline: none;
+  }
+

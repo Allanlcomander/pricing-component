@@ -18,12 +18,16 @@ body::after{
     content: "";
     position: absolute;
     top: 0; right: 0;
-    bottom: 0; left: 0;
+    bottom: -10px; left: 0;
     background-image: url("../images/bg-bottom.svg");
     background-repeat: no-repeat;
     background-position: bottom left;
-    background-size: 20%;
+    background-size: 28%;
     z-index: -1111;
+}
+
+.annually{
+    display: none;
 }
 
 /* grid layout */
@@ -201,4 +205,15 @@ body::after{
       border: 1px solid hsl(240, 78%, 98%);
       color: hsl(240, 78%, 98%);
   }
+
+
+  /* media querries */
+
+@media (min-width: 320px) and (max-width:425px){
+    [class*="col-"] {
+      width: 100%;
+      padding: 15px;
+      /* border: 1px #ffffff solid; */
+    }
+}
 

@@ -215,5 +215,76 @@ body::after{
       padding: 15px;
       /* border: 1px #ffffff solid; */
     }
+
+    /* body ::before{
+        background-image: none;
+        content: "";
+        position: relative;
+        top: 0; right: 0px;
+        bottom: 0; left: 200px;
+        background-image: url("../images/bg-top.svg");
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: contain;
+        
+        
+    } */
+
+    .col-4{
+        padding: 20px;
+        height: 400px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .basic,.master{
+        
+        border-radius: 10px;
+    }
+     
+
+    .proffessional{
+        position: static;
+        
+    }
+
+    .align{
+        position: static;
+    }
+
+    ul{
+        padding: 12px;
+    }
+    button{
+        padding: 15px 85px;
+    }
+}
+
+@media(width:768px){
+    .row{
+        width: 90%;
+    }
+    .col-4{
+        padding: 20px 10px;
+    }
+
+    ul{
+        padding: 12px;
+    }
+
+    button{
+        padding: 15px 50px;
+    }
+}
+
+@media(width:1024px){
+
+    .row{
+        width: 90%;
+    }
+    
+    button{
+        padding: 15px 40px;
+    } 
 }
 

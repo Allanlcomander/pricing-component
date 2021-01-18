@@ -1,33 +1,38 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: hsl(240, 78%, 97%);
     background-image: url("../images/bg-top.svg");
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
-    
+
 
 }
 
-body::after{
+body::after {
     content: "";
     position: absolute;
-    top: 0; right: 0;
-    bottom: -10px; left: 0;
+    top: 0;
+    right: 0;
+    bottom: -120px;
+    left: -50px;
     background-image: url("../images/bg-bottom.svg");
     background-repeat: no-repeat;
     background-position: bottom left;
     background-size: 28%;
     z-index: -1111;
+     
 }
 
 
-.annually{
+
+
+.annually {
     display: none;
 }
 
@@ -36,74 +41,108 @@ body::after{
 [class*="col-"] {
     float: left;
     padding: 15px;
-    /* border: 1px #ffffff solid; */
-  }
-  
-  .row {
+    
+}
+
+.row {
     width: 80%;
     margin: 0 auto;
-  }
-  
-  .row::after {
+}
+
+.row::after {
     content: "";
     display: table;
     clear: both;
-  }
-  
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 { width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 { width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 { width: 91.66%;}
-  .col-12 {width: 100%;}
-  
- /* toggle button */
- .switch {
-    
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/* toggle button */
+.switch {
+
     position: relative;
-    
+
     top: 0;
     right: 0;
     display: inline-block;
     width: 54px;
     height: 25px;
     margin: 10px;
-  }
-  
-  .toggle-text::after {
+}
+
+.toggle-text::after {
     content: "";
     display: table;
     clear: both;
-  }
-  .switch input { 
+}
+
+.switch input {
     opacity: 0;
     width: 0;
     height: 0;
-  }
-  
-  .slider {
+}
+
+.slider {
     position: absolute;
     cursor: pointer;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-     background-image: linear-gradient(to right,hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
     -webkit-transition: .4s;
     transition: .4s;
-  }
+}
 
-  /* body.light-theme .slider:hover{
-    background-image: linear-gradient(to right,hsl(210, 78%, 56%), hsl(146, 68%, 55%));
-  } */
-  
-  .slider:before {
+
+
+.slider:before {
     position: absolute;
     content: "";
     height: 19px;
@@ -113,260 +152,347 @@ body::after{
     background-color: hsl(240, 78%, 98%);
     -webkit-transition: .4s;
     transition: .4s;
-  }
+}
 
-  input:checked + .slider {
+input:checked+.slider {
     background-image: none;
-    background-image: linear-gradient(to right,hsl(236, 72%, 79%), hsl(237, 63%, 64%));
-  } 
-  
-  /* input:focus + .slider {
-    /* box-shadow:  1px 1px; 
-  } */
-  
-  input:checked + .slider:before {
+    background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+
+input:checked+.slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
-  }
-  .slider.round {
+}
+
+.slider.round {
     border-radius: 34px;
-  }
-  
-  .slider.round:before {
+}
+
+.slider.round:before {
     border-radius: 50%;
-  }
+}
 
 
-  .top-heading{
-      position: relative;
-      text-align: center;
-      padding: 40px;
-      margin-bottom: 20px;
-    
-  }
-  h1{
-      padding: 20px;
-      color: hsl(233, 13%, 49%) ;
-  }
+.top-heading {
+    position: relative;
+    text-align: center;
+    padding: 40px;
+    margin-bottom: 20px;
 
-  small{
-      padding: 20px;
+}
+
+h1 {
+    padding: 20px;
+    color: hsl(233, 13%, 49%);
+}
+
+small {
+    padding: 20px;
     font-weight: 700;
     color: hsl(233, 13%, 49%);
 }
-  .price-components{
-      text-align: center;
-      
-      
-  }
 
-  .col-4{
-      border-radius: 10px;
-      padding: 38px;
-  }
+.price-components {
+    text-align: center;
 
-  h5{
-      font-size: 20px;
-  }
 
-  .monthly,.annually{
-      font-size: 40px;
-      font-weight: 700;
-  }
-  ul{
-      list-style: none;
-  }
+}
 
-  ul li{
-      /* border-top:1px solid; */
-      border-bottom: 1px solid;
-      padding: 20px;
-      
-  }
+.col-4 {
+    border-radius: 10px;
+    padding: 38px;
+}
 
-  .head-basic,.head-master{
+h5 {
+    font-size: 20px;
+}
+
+.monthly,
+.annually {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+
+    border-bottom: 1px solid;
+    padding: 20px;
+
+}
+
+.head-basic,
+.head-master {
     color: hsl(233, 13%, 49%);
-    
 
-  }
 
-  .basic{
+}
+
+.basic {
     z-index: 9999;
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
-  }
-  .master{
+}
+
+.master {
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
-  }
-  .basic p{
-      color: hsl(232, 13%, 33%);
-  }
-  .master p{
-      color: hsl(232, 13%, 33%);
-  }
-  .basic ul li{
-      border-color: hsl(236, 72%, 79%);
-      color: hsl(232, 13%, 33%);
-  }
+}
 
-  .master ul li{
+.basic p {
+    color: hsl(232, 13%, 33%);
+}
+
+.master p {
+    color: hsl(232, 13%, 33%);
+}
+
+.basic ul li {
+    border-color: hsl(236, 72%, 79%);
+    color: hsl(232, 13%, 33%);
+}
+
+.master ul li {
     border-color: hsl(236, 72%, 85%);
     color: hsl(232, 13%, 33%);
-  }
-  .proffessional{
-      color: hsl(240, 78%, 98%);
-  }
+}
+
+.proffessional {
+    color: hsl(240, 78%, 98%);
+}
 
 
-  .basic,.master{
-      background-color:hsl(240, 78%, 98%);
-      height:450px;
-      box-shadow: 1px 1px 4px 4px hsl(236, 72%, 95%);
-      
-  }
+.basic,
+.master {
+    background-color: hsl(240, 78%, 98%);
+    height: 450px;
+    box-shadow: 1px 1px 4px 4px hsl(236, 72%, 95%);
 
-  .proffessional{
-      position: relative;
-      bottom: 40px;
-      height: 530px;
-      background-image: linear-gradient(to right,hsl(236, 72%, 79%),hsl(237, 63%, 64%));
-      
-      
-  }
+}
 
-  .align{
-      position: relative;
-      top: 40px;
-  }
+.proffessional {
+    position: relative;
+    bottom: 40px;
+    height: 530px;
+    background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
 
-  button{
-     padding: 15px 100px; 
-     margin-top: 30px;
-     border: 1px;
-     border-radius: 8px;
-     font-size: 15px;
-     font-weight: 700;
-     background-image: linear-gradient(to right,hsl(236, 72%, 79%),hsl(237, 63%, 64%));
-     color: hsl(240, 78%, 98%);
-     
-  }
 
-  button:hover{
-      cursor: pointer;
-  }
-  button:active{
-      outline: none;
-  }
+}
 
-  .master button:hover{
+.align {
+    position: relative;
+    top: 40px;
+}
+
+button {
+    padding: 15px 100px;
+    margin-top: 30px;
+    border: 1px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color: hsl(240, 78%, 98%);
+
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    outline: none;
+}
+
+.master button:hover {
     background-image: none;
     background-color: hsl(240, 78%, 98%);
     color: hsl(232, 13%, 33%);
     border: 1px solid hsl(232, 13%, 33%);
 
-  }
+}
 
-  .basic button:hover{
-      background-image: none;
-      background-color: hsl(240, 78%, 98%);
-      color: hsl(232, 13%, 33%);
-      border: 1px solid hsl(232, 13%, 33%);
+.basic button:hover {
+    background-image: none;
+    background-color: hsl(240, 78%, 98%);
+    color: hsl(232, 13%, 33%);
+    border: 1px solid hsl(232, 13%, 33%);
 
-  }
+}
 
-  .proffessional button{
-      background-image: none;
-      background-color: hsl(240, 78%, 98%);
-      color: hsl(237, 63%, 64%);
-  }
+.proffessional button {
+    background-image: none;
+    background-color: hsl(240, 78%, 98%);
+    color: hsl(237, 63%, 64%);
+}
 
-  .proffessional button:hover{
-      background-color: hsl(237, 63%, 64%);
-      border: 1px solid hsl(240, 78%, 98%);
-      color: hsl(240, 78%, 98%);
-  }
+.proffessional button:hover {
+    background-color: hsl(237, 63%, 64%);
+    border: 1px solid hsl(240, 78%, 98%);
+    color: hsl(240, 78%, 98%);
+}
 
 
-  /* media querries */
+/* media querries */
 
-@media (min-width: 320px) and (max-width:425px){
+@media (min-width: 320px) and (max-width:425px) {
     [class*="col-"] {
-      width: 100%;
-      padding: 15px;
-      /* border: 1px #ffffff solid; */
+        width: 100%;
+        padding: 15px;
+       
     }
 
-    /* body ::before{
-        background-image: none;
+    body{
+        position: absolute;
+        /* background-image: none; */
         content: "";
-        position: relative;
-        top: 0; right: 0px;
-        bottom: 0; left: 200px;
+    
+        top: 0; right: 0;
+        bottom: 0; left: 0; 
         background-image: url("../images/bg-top.svg");
         background-repeat: no-repeat;
         background-position: top right;
-        background-size: contain;
+        background-size: 200px;
+    
         
         
-    } */
+        
+    } 
 
-    .col-4{
+    .col-4 {
         padding: 20px;
         height: 400px;
         margin-top: 20px;
         margin-bottom: 20px;
     }
 
-    .basic,.master{
-        
+    .basic,
+    .master {
+
         border-radius: 10px;
     }
-     
 
-    .proffessional{
+
+    .proffessional {
         position: static;
-        
+
     }
 
-    .align{
+    .align {
         position: static;
     }
 
-    ul{
+    ul {
         padding: 12px;
     }
-    button{
+
+    button {
         padding: 15px 85px;
     }
 }
 
-@media(width:768px){
-    .row{
+@media(width:768px) {
+    
+   
+    body{
+        
+        background-image: url("../images/bg-top.svg");
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 40%;
+    
+        
+        
+        
+    } 
+    body::after{
+        position: absolute;
+        /* background-image: none; */
+        content: "";
+    
+        top: 0; right: 0;
+        bottom: -100px; left: 0; 
+        background-image: url("../images/bg-bottom.svg");
+        background-repeat: no-repeat;
+        background-position:  bottom left;
+        background-size: 35%;
+    
+        
+        
+        
+    } 
+    .row {
         width: 90%;
     }
-    .col-4{
+
+    .col-4 {
         padding: 20px 10px;
     }
 
-    ul{
+    ul {
         padding: 12px;
     }
 
-    button{
+    button {
         padding: 15px 50px;
     }
 }
 
-@media(width:1024px){
+@media(width:1024px) {
 
-    .row{
+    
+    body::after{
+        position: absolute;
+        /* background-image: none; */
+        content: "";
+    
+        top: 0; right: 0;
+        bottom: -300px; left: 0; 
+        background-image: url("../images/bg-bottom.svg");
+        background-repeat: no-repeat;
+        background-position:  left;
+        background-size: 38%;
+    
+        
+        
+        
+    } 
+    .row {
         width: 90%;
     }
-    
-    button{
+
+    button {
         padding: 15px 40px;
+    }
+}
+
+@media(width:1440px){
+    body::after{
+        position: absolute;
+        /* background-image: none; */
+        content: "";
+    
+        top: 0; right: 0;
+        bottom: -300px; left: 0; 
+        background-image: url("../images/bg-bottom.svg");
+        background-repeat: no-repeat;
+        background-position:  left;
+        background-size: 60;
+    
+        
+        
+        
     } 
 }
 
+@media(min-width:1024px)and (max-width:1440px){
+    footer{
+        position: relative;
+        bottom: -200px;
+    }
+}

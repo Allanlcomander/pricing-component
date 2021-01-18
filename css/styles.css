@@ -5,6 +5,8 @@
 }
 
 body {
+    font-family: 'Montserrat','Times New Roman', Times, serif;
+    font-weight: 700;
     background-color: hsl(240, 78%, 97%);
     background-image: url("../images/bg-top.svg");
     background-repeat: no-repeat;
@@ -305,9 +307,6 @@ button:hover {
     cursor: pointer;
 }
 
-button:active {
-    outline: none;
-}
 
 .master button:hover {
     background-image: none;
